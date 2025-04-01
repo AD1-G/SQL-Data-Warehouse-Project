@@ -1,0 +1,15 @@
+SELECT * FROM sys.schemas WHERE name = 'bronze';
+
+CREATE OR ALTER PROCEDURE bronze.load_bronze
+AS
+BEGIN
+    PRINT 'Bronze load procedure executed successfully!';
+END;
+
+
+EXEC bronze.load_bronze;
+
+
+
+
+
